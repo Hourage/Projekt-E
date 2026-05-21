@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Die Retter-Olympiade | Projekt E</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-icon">🏆</span>
+        <span>Retter-Olympiade</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#overview">Übersicht</a></li>
+        <li><a href="#schedule">Ablauf</a></li>
+        <li><a href="#challenges">Challenges</a></li>
+        <li><a href="#scoring">Wertung</a></li>
+        <li><a href="#prizes">Preise</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg">
+      <div class="hero-particles" id="particles"></div>
+      <div class="hero-pulse"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">Projekt E · 1. Lehrjahr Abschluss</div>
+      <h1 class="hero-title">
+        <span class="title-line">Die</span>
+        <span class="title-line highlight">Retter-</span>
+        <span class="title-line highlight">Olympiade</span>
+      </h1>
+      <p class="hero-sub">3 Tage · 2 Klassen · 1 Siegerteam</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Tage</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">10</span>
+          <span class="stat-label">Teams</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">6</span>
+          <span class="stat-label">Stationen</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Teamgeist</span>
+        </div>
+      </div>
+      <a href="#overview" class="hero-cta">Los geht's <span class="cta-arrow">↓</span></a>
+    </div>
+    <div class="hero-scroll-hint">scroll</div>
+  </header>
+
+  <!-- OVERVIEW -->
+  <section id="overview" class="section overview-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Das Konzept</span>
+        <h2>Was ist die Retter-Olympiade?</h2>
+        <p>Ein spielerischer Wettkampf, der Fachwissen, Teamgeist und Stressresistenz in einem einzigartigen Erlebnis verbindet.</p>
+      </div>
+      <div class="overview-grid">
+        <div class="overview-card" data-delay="0">
+          <div class="card-icon">🎯</div>
+          <h3>Zielsetzung</h3>
+          <p>Festigung aller theoretischen und praktischen Lerninhalte des 1. Lehrjahres unter spielerischem Druck.</p>
+        </div>
+        <div class="overview-card" data-delay="100">
+          <div class="card-icon">🤝</div>
+          <h3>Teamwork</h3>
+          <p>Klassenübergreifende Teams fördern Kommunikation, Zusammenhalt und CRM-Kompetenzen.</p>
+        </div>
+        <div class="overview-card" data-delay="200">
+          <div class="card-icon">🧠</div>
+          <h3>Wissensabruf</h3>
+          <p>Fachwissen muss unter Belastung abgerufen werden – genau wie im echten Einsatz.</p>
+        </div>
+        <div class="overview-card" data-delay="300">
+          <div class="card-icon">🏅</div>
+          <h3>Motivation</h3>
+          <p>Ein positiver, unvergesslicher Jahresabschluss mit echten Preisen und Erinnerungen.</p>
+        </div>
+      </div>
+      <div class="overview-info-bar">
+        <div class="info-item">
+          <span class="info-icon">📍</span>
+          <div>
+            <strong>Ort</strong>
+            <span>Schulgebäude & Gelände</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">🌙</span>
+          <div>
+            <strong>Übernachtung</strong>
+            <span>Im Schulgebäude (genehmigt)</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">👥</span>
+          <div>
+            <strong>Teilnehmer</strong>
+            <span>Beide Klassen des Jahrgangs</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">🗓️</span>
+          <div>
+            <strong>Zeitraum</strong>
+            <span>Sommer – Lehrjahresabschluss</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule" class="section schedule-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">3-Tage-Plan</span>
+        <h2>Der Ablauf</h2>
+        <p>Von Teambuilding bis Siegerehrung – jeder Tag hat seinen eigenen Charakter.</p>
+      </div>
+
+      <div class="day-tabs">
+        <button class="day-tab active" data-day="1">
+          <span class="tab-day">TAG 1</span>
+          <span class="tab-title">Teambuilding & Basics</span>
+        </button>
+        <button class="day-tab" data-day="2">
+          <span class="tab-day">TAG 2</span>
+          <span class="tab-title">Stress & Skills</span>
+        </button>
+        <button class="day-tab" data-day="3">
+          <span class="tab-day">TAG 3</span>
+          <span class="tab-title">Reflexion & Finale</span>
+        </button>
+      </div>
+
+      <div class="day-content active" id="day-1">
+        <div class="day-subtitle">
+          <span class="day-emoji">🌅</span>
+          <div>
+            <h3>Der Prolog</h3>
+            <p>Ankommen, kennenlernen, als Team zusammenwachsen</p>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="tl-time">08:00 – 09:30</div>
+            <div class="tl-content">
+              <h4>Begrüßung & Projekteinführung</h4>
+              <p>Vorstellung der Olympiade, Regeln, Punktesystem und Tagesablauf.</p>
+            </div>
+          </div>
+          <div class="timeline-item highlight-item">
+            <div class="tl-time">09:30 – 11:30</div>
+            <div class="tl-content">
+              <h4>⚡ Challenge 1: Corporate Identity</h4>
+              <p>Teams werden ausgelost. Jedes Team kreiert <strong>Teamname, Motto und Logo</strong>. Optional: Weiße T-Shirts mit Textilstiften bemalen.</p>
+              <div class="tl-tags">
+                <span class="tag tag-kreativ">Kreativität</span>
+                <span class="tag tag-team">Teamgeist</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item break-item">
+            <div class="tl-time">11:30 – 12:30</div>
+            <div class="tl-content">
+              <h4>🍽️ Mittagspause</h4>
+            </div>
+          </div>
+          <div class="timeline-item highlight-item">
+            <div class="tl-time">12:30 – 14:00</div>
+            <div class="tl-content">
+              <h4>⚡ Challenge 2: Blind Trust & Kommunikation</h4>
+              <p><strong>Blinder Patient:</strong> Hindernisparcours mit verbundenen Augen und verteilten Kommandos. <strong>Zeichnen nach Beschreibung:</strong> Medizinische Szenarien beschreiben und zeichnen.</p>
+              <div class="tl-tags">
+                <span class="tag tag-komm">Kommunikation</span>
+                <span class="tag tag-stress">CRM</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item highlight-item">
+            <div class="tl-time">14:00 – 15:30</div>
+            <div class="tl-content">
+              <h4>⚡ Challenge 3: Medizinische Basics</h4>
+              <p><strong>Mythen vs. Fakten:</strong> Kahoot-Quiz / Buzzer-Runde. <strong>Pharmakologie-Rätsel:</strong> Escape-Box mit Dosierungs-/Wirkstoff-Rätseln.</p>
+              <div class="tl-tags">
+                <span class="tag tag-wissen">Fachwissen</span>
+                <span class="tag tag-spass">Spielerisch</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-time">15:30 – 16:30</div>
+            <div class="tl-content">
+              <h4>Tagesabschluss & Schlaflager-Aufbau</h4>
+              <p>Zwischenstand der Punkte, Aufbau der Schlafbereiche in Turnhalle/Klassenzimmern.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-time">Ab 18:00</div>
+            <div class="tl-content">
+              <h4>🔥 Gemeinsames Grillen</h4>
+              <p>Entspannung, Teambonding. Optional: Wasserbombenschlacht.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="day-content" id="day-2">
+        <div class="day-subtitle">
+          <span class="day-emoji">⚔️</span>
+          <div>
+            <h3>Der Hauptwettkampf</h3>
+            <p>Voller Einsatz an 6 Stationen – hier wird der Sieger entschieden</p>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item break-item">
+            <div class="tl-time">07:30 – 08:30</div>
+            <div class="tl-content">
+              <h4>🥐 Gemeinsames Frühstück</h4>
+            </div>
+          </div>
+          <div class="timeline-item highlight-item">
+            <div class="tl-time">08:30 – 12:00</div>
+            <div class="tl-content">
+              <h4>🏃 Stationslauf Teil 1</h4>
+              <p>Jedes Team rotiert durch 3 Stationen:</p>
+              <div class="station-cards">
+                <div class="station-mini">
+                  <span class="station-letter">A</span>
+                  <div>
+                    <strong>Dual Task CPR</strong>
+                    <span>Reanimation + Fachfragen gleichzeitig</span>
+                  </div>
+                </div>
+                <div class="station-mini">
+                  <span class="station-letter">B</span>
+                  <div>
+                    <strong>Blind Bag & Skills</strong>
+                    <span>Material ertasten & korrekt anwenden</span>
+                  </div>
+                </div>
+                <div class="station-mini">
+                  <span class="station-letter">C</span>
+                  <div>
+                    <strong>Tragen-Parcours</strong>
+                    <span>Patient schonend transportieren</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item break-item">
+            <div class="tl-time">12:00 – 13:00</div>
+            <div class="tl-content">
+              <h4>🍽️ Mittagspause</h4>
+            </div>
+          </div>
+          <div class="timeline-item highlight-item">
+            <div class="tl-time">13:00 – 16:30</div>
+            <div class="tl-content">
+              <h4>🏃 Stationslauf Teil 2</h4>
+              <p>Weiter geht's mit 3 weiteren Stationen:</p>
+              <div class="station-cards">
+                <div class="station-mini">
+                  <span class="station-letter">D</span>
+                  <div>
+                    <strong>Mega-Code light</strong>
+                    <span>Fallbeispiel + ABCDE-Übergabe</span>
+                  </div>
+                </div>
+                <div class="station-mini">
+                  <span class="station-letter">E</span>
+                  <div>
+                    <strong>Stille Post Diagnose</strong>
+                    <span>Übergabe durch 4 Mitglieder</span>
+                  </div>
+                </div>
+                <div class="station-mini">
+                  <span class="station-letter">F</span>
+                  <div>
+                    <strong>Gruppendynamik</strong>
+                    <span>Plane umdrehen / Marshmallow-Turm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-time">16:30 – 17:30</div>
+            <div class="tl-content">
+              <h4>💬 Tages-Debriefing</h4>
+              <p>Reflexion: Wie hat das Team unter Stress funktioniert? Was lief bei der Kommunikation gut – und was nicht?</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-time">Abends</div>
+            <div class="tl-content">
+              <h4>🎬 Freie Gestaltung</h4>
+              <p>Filmabend (thematisch oder zur Entspannung), gemeinsame Zeit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="day-content" id="day-3">
+        <div class="day-subtitle">
+          <span class="day-emoji">🏆</span>
+          <div>
+            <h3>Das Finale</h3>
+            <p>Reflexion, Kreativität und die große Siegerehrung</p>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item break-item">
+            <div class="tl-time">08:00 – 09:00</div>
+            <div class="tl-content">
+              <h4>🥐 Frühstück & Räumen</h4>
+              <p>Gemeinsames Frühstück und Abbau der Schlaflager.</p>
+            </div>
+          </div>
+          <div class="timeline-item highlight-item">
+            <div class="tl-time">09:00 – 11:30</div>
+            <div class="tl-content">
+              <h4>⚡ Challenge 4: Foto-Rallye / Lehrposter</h4>
+              <p><strong>Option A (Kreativ):</strong> 3 Fachbegriffe fotografisch auf dem Schulgelände nachstellen oder als One-Pager gestalten.</p>
+              <p><strong>Option B (Wissen):</strong> Escape Room im Schulgebäude – medizinisches Wissen öffnet Schlösser, der "Patient" wird gerettet.</p>
+              <div class="tl-tags">
+                <span class="tag tag-kreativ">Kreativität</span>
+                <span class="tag tag-wissen">Fachwissen</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-time">11:30 – 12:30</div>
+            <div class="tl-content">
+              <h4>🎤 Präsentation & Zählspiel</h4>
+              <p>Teams präsentieren Challenge 4. Abschließendes Zählspiel (von 20 runterzählen – spricht jemand gleichzeitig, beginnt es von vorn).</p>
+            </div>
+          </div>
+          <div class="timeline-item break-item">
+            <div class="tl-time">12:30 – 13:30</div>
+            <div class="tl-content">
+              <h4>🍕 Mittagspause – Pizza!</h4>
+            </div>
+          </div>
+          <div class="timeline-item highlight-item">
+            <div class="tl-time">13:30 – 15:00</div>
+            <div class="tl-content">
+              <h4>🏆 Siegerehrung, Zeitkapsel & Abschluss</h4>
+              <p>Jeder schreibt einen <strong>Brief an sein zukünftiges Ich im 3. Lehrjahr</strong>. Die Kapsel wird versiegelt. Dann: Preisverleihung, Urkunden und Feedbackrunde zum ersten Lehrjahr.</p>
+              <div class="tl-tags">
+                <span class="tag tag-herz">Reflexion</span>
+                <span class="tag tag-team">Erinnerung</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHALLENGES -->
+  <section id="challenges" class="section challenges-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Die Stationen</span>
+        <h2>Die 6 Wettkampf-Stationen</h2>
+        <p>Jede Station testet andere Kompetenzen – gemeinsam ergeben sie das vollständige Bild eines guten Retters.</p>
+      </div>
+      <div class="challenges-grid">
+        <div class="challenge-card" data-station="A">
+          <div class="challenge-header">
+            <span class="challenge-letter">A</span>
+            <div class="challenge-title-block">
+              <h3>Dual Task CPR</h3>
+              <span class="challenge-cat">Stressresistenz</span>
+            </div>
+          </div>
+          <p>Reanimation an der Feedback-Puppe – währenddessen stellt der Instruktor Fachfragen oder Kopfrechenaufgaben. Jeder Fehler zählt doppelt.</p>
+          <div class="challenge-scoring">
+            <span>📊 Bewertung:</span>
+            <span>CPR-Score (%) minus Fehler bei Fragen</span>
+          </div>
+          <div class="challenge-skills">
+            <span>💪 Psychomotorik</span>
+            <span>🧠 Kognition</span>
+            <span>😤 Stressresistenz</span>
+          </div>
+        </div>
+
+        <div class="challenge-card" data-station="B">
+          <div class="challenge-header">
+            <span class="challenge-letter">B</span>
+            <div class="challenge-title-block">
+              <h3>Blind Bag & Skills</h3>
+              <span class="challenge-cat">Muskelgedächtnis</span>
+            </div>
+          </div>
+          <p>Mit verbundenen Augen (Gefühlskiste) medizinisches Material ertasten, korrekt benennen und am Modell anwenden: SGA, IV-Zugang, Verbandsmaterial.</p>
+          <div class="challenge-scoring">
+            <span>📊 Bewertung:</span>
+            <span>Korrekte Benennung + fehlerfreie Anwendung</span>
+          </div>
+          <div class="challenge-skills">
+            <span>🖐️ Tastsinn</span>
+            <span>📚 Materialkenntnis</span>
+            <span>⚡ Routine</span>
+          </div>
+        </div>
+
+        <div class="challenge-card" data-station="C">
+          <div class="challenge-header">
+            <span class="challenge-letter">C</span>
+            <div class="challenge-title-block">
+              <h3>Tragen-Parcours</h3>
+              <span class="challenge-cat">Technik & Tempo</span>
+            </div>
+          </div>
+          <p>Den Patienten (Puppe) schonend, schnell und fehlerfrei über Treppen und enge Gänge transportieren. Geschwindigkeit UND Qualität zählen.</p>
+          <div class="challenge-scoring">
+            <span>📊 Bewertung:</span>
+            <span>Zeit in Sekunden + Strafpunkte für Fehler</span>
+          </div>
+          <div class="challenge-skills">
+            <span>🏋️ Kraft</span>
+            <span>🗣️ Koordination</span>
+            <span>⏱️ Tempo</span>
+          </div>
+        </div>
+
+        <div class="challenge-card" data-station="D">
+          <div class="challenge-header">
+            <span class="challenge-letter">D</span>
+            <div class="challenge-title-block">
+              <h3>Mega-Code light</h3>
+              <span class="challenge-cat">Klinisches Denken</span>
+            </div>
+          </div>
+          <p>Realistisches Fallbeispiel (Anaphylaxie, Hypoglykämie, Trauma). Strukturiertes Vorgehen nach ABCDE, Übergabe nach SINNHAFT/SBAR wird bewertet.</p>
+          <div class="challenge-scoring">
+            <span>📊 Bewertung:</span>
+            <span>Struktur, Vollständigkeit, Übergabequalität</span>
+          </div>
+          <div class="challenge-skills">
+            <span>🔬 ABCDE</span>
+            <span>📋 SBAR</span>
+            <span>🤔 Klinisch</span>
+          </div>
+        </div>
+
+        <div class="challenge-card" data-station="E">
+          <div class="challenge-header">
+            <span class="challenge-letter">E</span>
+            <div class="challenge-title-block">
+              <h3>Stille Post Diagnose</h3>
+              <span class="challenge-cat">Kommunikation</span>
+            </div>
+          </div>
+          <p>Ein komplexer Patient wird mündlich durch 4 Teammitglieder weitergegeben. Wie viel Information geht verloren? Das letzte Mitglied übergibt an die "Klinik".</p>
+          <div class="challenge-scoring">
+            <span>📊 Bewertung:</span>
+            <span>Vollständigkeit der finalen Übergabe</span>
+          </div>
+          <div class="challenge-skills">
+            <span>👂 Zuhören</span>
+            <span>🗣️ Präzision</span>
+            <span>🔄 CRM</span>
+          </div>
+        </div>
+
+        <div class="challenge-card" data-station="F">
+          <div class="challenge-header">
+            <span class="challenge-letter">F</span>
+            <div class="challenge-title-block">
+              <h3>Gruppendynamik</h3>
+              <span class="challenge-cat">Team & Kreativität</span>
+            </div>
+          </div>
+          <p>Alle stehen auf einer Plane und müssen diese umdrehen – ohne den Boden zu berühren. Alternativ: Turm aus Spaghetti und Marshmallow bauen (so hoch wie möglich).</p>
+          <div class="challenge-scoring">
+            <span>📊 Bewertung:</span>
+            <span>Aufgabe gelöst + Zeitbonus</span>
+          </div>
+          <div class="challenge-skills">
+            <span>🤝 Teamwork</span>
+            <span>💡 Strategie</span>
+            <span>😄 Fun</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCORING -->
+  <section id="scoring" class="section scoring-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Fairness & Transparenz</span>
+        <h2>Das Punktesystem</h2>
+        <p>Klare Regeln, faire Wertung – jeder weiß, wofür es Punkte gibt.</p>
+      </div>
+      <div class="scoring-grid">
+        <div class="scoring-block">
+          <h3>🥇 Platzierungspunkte</h3>
+          <div class="points-table">
+            <div class="points-row gold">
+              <span>1. Platz</span><span class="pts">10 Punkte</span>
+            </div>
+            <div class="points-row silver">
+              <span>2. Platz</span><span class="pts">8 Punkte</span>
+            </div>
+            <div class="points-row bronze">
+              <span>3. Platz</span><span class="pts">6 Punkte</span>
+            </div>
+            <div class="points-row">
+              <span>4. Platz</span><span class="pts">5 Punkte</span>
+            </div>
+            <div class="points-row">
+              <span>5. Platz</span><span class="pts">4 Punkte</span>
+            </div>
+            <div class="points-row">
+              <span>Teilnahme</span><span class="pts">1 Punkt</span>
+            </div>
+          </div>
+        </div>
+        <div class="scoring-block">
+          <h3>⭐ Bonuspunkte</h3>
+          <div class="bonus-list">
+            <div class="bonus-item">
+              <span class="bonus-icon">❤️</span>
+              <div>
+                <strong>Teamgeist-Karte</strong>
+                <span>Von Lehrern vergeben bei besonderem Zusammenhalt</span>
+              </div>
+              <span class="bonus-pts">+3 Pkt</span>
+            </div>
+            <div class="bonus-item">
+              <span class="bonus-icon">🗣️</span>
+              <div>
+                <strong>Kommunikations-Award</strong>
+                <span>Vorbildliche Closed-Loop-Communication</span>
+              </div>
+              <span class="bonus-pts">+2 Pkt</span>
+            </div>
+            <div class="bonus-item">
+              <span class="bonus-icon">🎨</span>
+              <div>
+                <strong>Kreativitätspreis</strong>
+                <span>Bestes Logo / kreativste Präsentation</span>
+              </div>
+              <span class="bonus-pts">+2 Pkt</span>
+            </div>
+            <div class="bonus-item">
+              <span class="bonus-icon">💡</span>
+              <div>
+                <strong>Sonderleistung</strong>
+                <span>Außergewöhnliche Leistung nach Ermessen</span>
+              </div>
+              <span class="bonus-pts">+1 Pkt</span>
+            </div>
+          </div>
+        </div>
+        <div class="scoring-block scoring-crm">
+          <h3>🔬 Pädagogischer Kern</h3>
+          <div class="crm-items">
+            <div class="crm-item">
+              <div class="crm-icon">💪</div>
+              <div>
+                <strong>Wissensabruf unter Last</strong>
+                <p>Dual Task und Blind Bag trainieren Muskelgedächtnis und Routine – wie im echten Einsatz.</p>
+              </div>
+            </div>
+            <div class="crm-item">
+              <div class="crm-icon">🗣️</div>
+              <div>
+                <strong>CRM sichtbar machen</strong>
+                <p>Stille Post deckt Kommunikationslücken schonungslos auf. Closed-Loop wird spürbar, nicht nur erklärt.</p>
+              </div>
+            </div>
+            <div class="crm-item">
+              <div class="crm-icon">🪞</div>
+              <div>
+                <strong>Selbstreflexion</strong>
+                <p>Debriefing und Zeitkapsel zwingen zur echten Auseinandersetzung mit dem eigenen Lernstand.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIZES -->
+  <section id="prizes" class="section prizes-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Siegerehrung</span>
+        <h2>Die Preise</h2>
+        <p>Echte Anerkennung für echte Leistung.</p>
+      </div>
+      <div class="prizes-podium">
+        <div class="podium-card silver-card">
+          <div class="podium-position">2</div>
+          <div class="podium-trophy">🥈</div>
+          <h3>2. Platz</h3>
+          <p>Nützliches Einsatz-Zubehör</p>
+          <ul class="prize-list">
+            <li>Pupillenleuchten</li>
+            <li>Karabiner für die Hose</li>
+            <li>Notizblöcke für den Dienst</li>
+          </ul>
+        </div>
+        <div class="podium-card gold-card">
+          <div class="podium-crown">👑</div>
+          <div class="podium-position">1</div>
+          <div class="podium-trophy">🥇</div>
+          <h3>1. Platz</h3>
+          <p>Der Goldene Laryngoskop-Spatel</p>
+          <ul class="prize-list">
+            <li>🏆 Wanderpokal (vergoldeter Spatel)</li>
+            <li>Hochwertiges Stethoskop</li>
+            <li>Personalisierte Kleiderscheren</li>
+            <li>Gutschein für Fachliteratur</li>
+          </ul>
+          <div class="gold-badge">HAUPTPREIS</div>
+        </div>
+        <div class="podium-card bronze-card">
+          <div class="podium-position">3</div>
+          <div class="podium-trophy">🥉</div>
+          <h3>3. Platz</h3>
+          <p>Nervennahrung für den Dienst</p>
+          <ul class="prize-list">
+            <li>Riesiger Süßigkeiten-Korb</li>
+            <li>Energy Drinks</li>
+            <li>Snacks für die nächsten Dienste</li>
+          </ul>
+        </div>
+      </div>
+      <div class="all-prize">
+        <div class="all-prize-icon">🎖️</div>
+        <div class="all-prize-text">
+          <h3>Alle Teilnehmer erhalten</h3>
+          <p>Eine offizielle Urkunde der <strong>1. Retter-Olympiade</strong> und ein Erinnerungsfoto ihres Teams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-icon">🏆</span>
+          <span><strong>Retter-Olympiade</strong></span>
+        </div>
+        <p class="footer-tagline">Projekt E · Abschluss des 1. Lehrjahres</p>
+        <p class="footer-copy">Teamwork · Fachwissen · Unvergesslich</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
