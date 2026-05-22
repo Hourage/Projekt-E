@@ -3,583 +3,339 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OPERATION BLACKOUT // PROJEKT E — Medical Task Force Vanguard</title>
+  <title>BIZ OLYMPIADE — Wer wird Champion?</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cinzel+Decorative:wght@700&family=Inter:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <div class="scanlines" aria-hidden="true"></div>
+  <canvas id="stars-canvas" aria-hidden="true"></canvas>
 
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
       <div class="nav-logo">
-        <span class="nav-logo-bracket">[</span>PROJEKT E<span class="nav-logo-bracket">]</span>
+        <span class="nav-wreath">🌿</span>
+        <span>BIZ OLYMPIADE</span>
+        <span class="nav-wreath flip">🌿</span>
       </div>
       <ul class="nav-links">
-        <li><a href="#praemisse">Prämisse</a></li>
-        <li><a href="#protokoll">Protokoll</a></li>
-        <li><a href="#einsatzplan">Einsatzplan</a></li>
-        <li><a href="#upgrades">Upgrades</a></li>
-        <li><a href="#xp">XP-System</a></li>
-        <li><a href="#paed">Pädagogik</a></li>
+        <li><a href="#konzept">Konzept</a></li>
+        <li><a href="#tag1">Tag I</a></li>
+        <li><a href="#nacht">Nacht</a></li>
+        <li><a href="#tag2">Tag II</a></li>
+        <li><a href="#tag3">Tag III</a></li>
+        <li><a href="#preise">Ehrung</a></li>
       </ul>
-      <div class="nav-status">
-        <span class="status-dot"></span>
-        <span class="mono-sm">OPERATION BLACKOUT</span>
-      </div>
     </div>
   </nav>
 
   <!-- ===== HERO ===== -->
   <header class="hero" id="hero">
-    <div class="hero-grid-overlay" aria-hidden="true"></div>
-    <div class="hero-noise" aria-hidden="true"></div>
-    <div class="hero-content">
-      <div class="hero-top-row">
-        <span class="classified-tag">// VERSCHLUSSSACHE //</span>
-        <span class="classified-tag">CLEARANCE: INSTRUKTOR</span>
-        <span class="classified-tag">OP-CODE: BLACKOUT</span>
+    <div class="hero-inner">
+
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">ERSTES LEHRJAHR — ABSCHLUSS</span>
+        <span class="eyebrow-line"></span>
       </div>
-      <div class="hero-title-block">
-        <div class="hero-pre">MEDICAL TASK FORCE VANGUARD — INITIIERUNG</div>
-        <h1 class="hero-title" id="glitch-title" data-text="PROJEKT E">PROJEKT E</h1>
-        <div class="hero-edition">OPERATION BLACKOUT // EPIC EDITION</div>
+
+      <div class="hero-emblem" aria-hidden="true">
+        <div class="emblem-ring emblem-ring-1"></div>
+        <div class="emblem-ring emblem-ring-2"></div>
+        <div class="emblem-ring emblem-ring-3"></div>
+        <div class="emblem-center">🏆</div>
       </div>
-      <p class="hero-tagline">
-        <span class="mono-green">›</span>
-        Kein Schulfest. Kein normaler Unterricht.
-        <span class="hero-emph">72 Stunden, die sie nie vergessen werden.</span>
-      </p>
-      <div class="hero-metrics">
-        <div class="metric"><span class="metric-val">72</span><span class="metric-lbl">Stunden</span></div>
-        <div class="metric-sep">—</div>
-        <div class="metric"><span class="metric-val">5</span><span class="metric-lbl">Squads</span></div>
-        <div class="metric-sep">—</div>
-        <div class="metric"><span class="metric-val">02:00</span><span class="metric-lbl">Code Black</span></div>
-        <div class="metric-sep">—</div>
-        <div class="metric"><span class="metric-val">0</span><span class="metric-lbl">Handys</span></div>
+
+      <h1 class="hero-title">
+        <span class="hero-title-biz">BIZ</span>
+        <span class="hero-title-main">OLYMPIADE</span>
+      </h1>
+
+      <div class="hero-laurel" aria-hidden="true">
+        <span class="laurel-left">❧❧❧❧❧</span>
+        <span class="laurel-center">✦</span>
+        <span class="laurel-right">❧❧❧❧❧</span>
       </div>
-      <div class="hero-motto">
-        <span class="mono-green">MOTTO //</span>
-        <span class="motto-text">"Expect the unexpected."</span>
+
+      <p class="hero-tagline">Wer wird Champion des ersten Lehrjahres?</p>
+
+      <div class="hero-pillars">
+        <div class="hero-pillar">
+          <span class="pillar-num">3</span>
+          <span class="pillar-lbl">Tage</span>
+        </div>
+        <div class="pillar-col"></div>
+        <div class="hero-pillar">
+          <span class="pillar-num">5</span>
+          <span class="pillar-lbl">Squads</span>
+        </div>
+        <div class="pillar-col"></div>
+        <div class="hero-pillar">
+          <span class="pillar-num">∞</span>
+          <span class="pillar-lbl">XP auf dem Spiel</span>
+        </div>
+        <div class="pillar-col"></div>
+        <div class="hero-pillar">
+          <span class="pillar-num">1</span>
+          <span class="pillar-lbl">Goldener Spatel</span>
+        </div>
       </div>
-      <a href="#praemisse" class="hero-cta">
-        <span>BRIEFING STARTEN</span>
-        <span class="cta-icon">↓</span>
+
+      <a href="#konzept" class="hero-cta">
+        <span>Zum Einsatzplan</span>
+        <span class="cta-scroll">↓</span>
       </a>
-    </div>
-    <div class="hero-side-deco" aria-hidden="true">
-      <div class="deco-line"></div>
-      <div class="deco-coords">
-        <div class="mono-sm">48°N 11°E</div>
-        <div class="mono-sm">BHP ALPHA</div>
-        <div class="mono-sm red-text">STROM: AUS</div>
+
+      <div class="hero-motto">
+        <span class="motto-greek">ΝΙΚΗ</span>
+        <span class="motto-sep">·</span>
+        <span>"Alles bringt Punkte. Jeder Handgriff zählt."</span>
       </div>
     </div>
   </header>
 
-  <!-- ===== PRÄMISSE ===== -->
-  <section id="praemisse" class="section praemisse-section">
+  <!-- MEANDER DIVIDER -->
+  <div class="meander-bar" aria-hidden="true">
+    <div class="meander-line"></div>
+    <span class="meander-symbol">◆</span>
+    <div class="meander-line"></div>
+  </div>
+
+  <!-- ===== KONZEPT ===== -->
+  <section id="konzept" class="section konzept-section">
     <div class="container">
-      <div class="section-label"><span class="mono-green">00 //</span> DIE PRÄMISSE — OPERATION BLACKOUT</div>
-
-      <div class="premise-doc">
-        <div class="doc-header">
-          <div class="doc-header-left">
-            <span class="doc-stamp">EINSATZBEFEHL</span>
-            <span class="mono-sm">KLASSIFIZIERUNG: STRENG GEHEIM</span>
-          </div>
-          <div class="doc-header-right">
-            <span class="mono-sm">BHP ALPHA // SCHULGEBÄUDE</span>
-            <span class="mono-sm red-text">BLACKOUT-LAGE AKTIV</span>
-          </div>
-        </div>
-        <div class="doc-body">
-          <p class="doc-lead">
-            Ein massiver <strong>Cyberangriff auf das europäische Stromnetz</strong> hat einen flächendeckenden Blackout ausgelöst. Die reguläre Rettungskette ist zusammengebrochen. Krankenhäuser nehmen keine Patienten mehr auf. Die Leitstelle ist offline.
-          </p>
-          <p class="doc-text">
-            Das Schulgebäude wird zum <strong>Behandlungsplatz (BHP) Alpha</strong> — der einzigen medizinischen Anlaufstelle für den gesamten Sektor. Die Anwärter der Medical Task Force Vanguard sind jetzt die einzige Verteidigungslinie zwischen Chaos und Überleben.
-          </p>
-          <div class="doc-rule">
-            <span class="mono-green">GRUNDREGEL //</span>
-            <p>Ab dem Moment, in dem die Schüler den Raum betreten, gibt es keine Schule mehr. Es gibt keine Lehrer. Die Lehrkräfte sind die <strong>Einsatzleitung</strong>. Kein Lächeln beim Briefing. Strikte Anweisungen. Funkdisziplin. Die Immersion darf in den ersten 24 Stunden niemals gebrochen werden.</p>
-          </div>
-        </div>
-        <div class="doc-footer">
-          <div class="doc-item">
-            <span class="doc-item-label">HANDYS</span>
-            <span>Werden gesammelt + in "Gefahrgut-Beuteln" versiegelt. <em>"Wir brauchen keine toten Funkzellen-Sucher, die Akkus rauben."</em></span>
-          </div>
-          <div class="doc-item">
-            <span class="doc-item-label">RÜCKKEHR</span>
-            <span>Tag 3, Foto-Rallye. Für exakt 45 Minuten freigegeben.</span>
-          </div>
-        </div>
+      <div class="section-label-olymp">
+        <span class="label-roman">I</span>
+        <span class="label-text">DAS KONZEPT</span>
       </div>
+      <h2 class="section-title">Die Arena ist bereit</h2>
+      <p class="section-lead">Drei Tage lang wird die Schule zur antiken Wettkampfstätte. Kein Schüler — ein Athlet. Kein Lehrer — die Spielleitung.</p>
 
-      <!-- SURVIVAL KIT -->
-      <div class="kit-section">
-        <h3 class="kit-title">Squad Survival-Kit — Ausgabe bei Ankunft</h3>
-        <div class="kit-grid">
-          <div class="kit-item">
-            <span class="kit-icon">📻</span>
-            <div>
-              <strong>PMR-Funkgerät</strong>
-              <span>Kanal zugewiesen — einziges Kommunikationsmittel</span>
-            </div>
-          </div>
-          <div class="kit-item">
-            <span class="kit-icon">💡</span>
-            <div>
-              <strong>2× Knicklichter + 1× Taschenlampe</strong>
-              <span>Einzige Lichtquelle im Blackout-Szenario</span>
-            </div>
-          </div>
-          <div class="kit-item">
-            <span class="kit-icon">🖊️</span>
-            <div>
-              <strong>Gaffa-Tape + Edding + Klemmbrett</strong>
-              <span>Für Squad-Armbinden und Dokumentation</span>
-            </div>
-          </div>
-          <div class="kit-item">
-            <span class="kit-icon">📋</span>
-            <div>
-              <strong>"Verschlusssache"-Akte</strong>
-              <span>Einsatzregeln, Funkrufnamen, erste Koordinaten</span>
-            </div>
-          </div>
+      <div class="arena-layout">
+        <div class="arena-card featured-arena">
+          <div class="arena-icon">🏛️</div>
+          <h3>Basecamp / Arena</h3>
+          <p>Ein großer Unterrichtsraum wird zum geschützten Basecamp der Teilnehmer erklärt. Hier hängt das riesige <strong>Leaderboard am Whiteboard</strong> — sichtbar für alle, jederzeit. Die Rivalität ist real.</p>
+          <div class="arena-tag">Heimat der Champions</div>
+        </div>
+        <div class="arena-card">
+          <div class="arena-icon">🗺️</div>
+          <h3>Öffentlicher Raum</h3>
+          <p>Gänge und Pausenhof sind "ziviles Gelände". Die anderen Klassen sind <span class="gold-text">Zivilisten</span> — professionell zu ignorieren oder wegzuschicken. Immersion ohne Störung des Schulbetriebs.</p>
+        </div>
+        <div class="arena-card">
+          <div class="arena-icon">📊</div>
+          <h3>Das Leaderboard</h3>
+          <p>Alles bringt Punkte. Medizinische Korrektheit, Zeit, Teamwork (CRM), Kreativität. Der Stand ist <strong>immer sichtbar</strong> — außer an Tag 3, wo er bis zur Enthüllung verdeckt bleibt.</p>
+        </div>
+        <div class="arena-card">
+          <div class="arena-icon">🎖️</div>
+          <h3>Die Spielleitung</h3>
+          <p>Lehrkräfte agieren als olympische Kampfrichter: neutral, präzise, unbestechlich. Stoppuhr, Klemmbrett, Bewertungsbogen. Emotionen nicht ausgeschlossen — das Anfeuern der Zuschauer ist Pflicht.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== INSTRUKTOR-PROTOKOLL ===== -->
-  <section id="protokoll" class="section protokoll-section">
+  <div class="meander-bar" aria-hidden="true">
+    <div class="meander-line"></div>
+    <span class="meander-symbol">◆</span>
+    <div class="meander-line"></div>
+  </div>
+
+  <!-- ===== TAG 1 ===== -->
+  <section id="tag1" class="section tag-section">
     <div class="container">
-      <div class="section-label"><span class="mono-green">01 //</span> INSTRUKTOR-PROTOKOLL — EINSATZLEITUNGS-REGELN</div>
-      <div class="protokoll-grid">
-        <div class="proto-card">
-          <div class="proto-icon">🎖️</div>
-          <h3>Keine Lehrer — Einsatzleitung</h3>
-          <p>Dienstkleidung, Clipboard, Stoppuhr, Trillerpfeife. Militärisches Vokabular. Strikte Haltung in den ersten 24 Stunden. Kein "Schüler"-Verhalten toleriert, nur "Anwärter".</p>
-        </div>
-        <div class="proto-card">
-          <div class="proto-icon">📡</div>
-          <h3>Funk-Only-Kommunikation</h3>
-          <p>Befehle laufen über PMR-Geräte. "Alpha Squad, sofort zum Haupteingang — Code Blue." Direktgespräch nur in Notfällen. Puls steigt garantiert.</p>
-        </div>
-        <div class="proto-card">
-          <div class="proto-icon">🔒</div>
-          <h3>Immersion niemals brechen</h3>
-          <p>Die Prämisse gilt durchgehend. Kein "Ich erkläre euch mal kurz…" — sondern "Neue Intel vom Sektor: Ein Patient mit SHT wird eingeliefert. Squads, vorbereiten!"</p>
-        </div>
-        <div class="proto-card">
-          <div class="proto-icon">⚠️</div>
-          <h3>Safety-Wort definieren</h3>
-          <p>Ein klar kommuniziertes Stopp-Wort (z.B. "FREEZE") für echte Notlagen. Einmal ausgesprochen → sofortiger Immersionsbruch + realworld-check. Sicherheit hat Priorität.</p>
+      <div class="day-olymp-header">
+        <div class="day-olymp-badge">TAG I</div>
+        <div>
+          <h2 class="day-olymp-title">THE QUALIFIERS</h2>
+          <p class="day-olymp-sub">Skills & Speed — Die Eröffnung der Spiele</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ===== EINSATZPLAN ===== -->
-  <section id="einsatzplan" class="section einsatzplan-section">
-    <div class="container">
-      <div class="section-label"><span class="mono-green">02 //</span> EINSATZPLAN — 72-STUNDEN-PROTOKOLL</div>
-
-      <!-- ========== TAG 1 ========== -->
-      <div class="day-block">
-        <div class="day-header">
-          <div class="day-badge">TAG 1</div>
-          <div class="day-title-block">
-            <h2>"THE SETUP"</h2>
-            <span class="day-sub">Systemausfall & Initiation</span>
-          </div>
-          <div class="day-status green-status">AKTIV</div>
+      <!-- PHASE 1 -->
+      <div class="olymp-phase">
+        <div class="phase-header-olymp">
+          <span class="phase-num-olymp">α</span>
+          <span>OPENING CEREMONY & SQUAD BUILDING</span>
+          <span class="phase-time">08:00 – 09:30</span>
         </div>
-
-        <!-- PHASE 1 -->
-        <div class="phase-block">
-          <div class="phase-label"><span class="mono-green">PHASE 1</span> — DER SCHOCK (08:00–09:30)</div>
-          <div class="ops-grid">
-            <div class="op-card shock-op">
-              <div class="op-time">08:00</div>
-              <div class="op-content">
-                <h4>🚨 DER ERSTE EINDRUCK</h4>
-                <p>Klasse betritt regulären Unterrichtsraum. <strong>Lichter aus. Fenster mit schwarzen Müllsäcken abgedeckt.</strong> Rotierendes Baustellen-Blinklicht. Aus der Bluetooth-Box rauscht ein gefakter Radio-Notruf:</p>
-                <div class="radio-msg">"…bitten die Bevölkerung Ruhe zu bewahren… Stromnetz komplett ausgefallen… bleiben Sie in Ihren Häusern…"</div>
-              </div>
+        <div class="events-grid">
+          <div class="event-card ceremony-card">
+            <div class="event-time">08:00</div>
+            <div class="event-body">
+              <h4>🎵 Der Einmarsch</h4>
+              <p>Die Klasse betritt das Basecamp. Treibende Musik (Rocky Theme / epische Filmmusik). Vorn: das <strong>verdeckte Leaderboard</strong>. Im Spotlight: der Goldene Spatel auf seinem Podest.</p>
             </div>
-            <div class="op-card shock-op">
-              <div class="op-time">08:10</div>
-              <div class="op-content">
-                <h4>📣 DAS BRIEFING</h4>
-                <p>Instruktor betritt hektisch den Raum — Warnweste, Klemmbrett.</p>
-                <div class="radio-msg">"Hören Sie zu! Die Leitstelle ist offline. Die Krankenhäuser nehmen niemanden mehr auf. Wir sind jetzt die einzige medizinische Anlaufstelle für diesen Sektor. Bilden Sie sofort 5er-Squads!"</div>
-              </div>
+          </div>
+          <div class="event-card ceremony-card">
+            <div class="event-time">08:10</div>
+            <div class="event-body">
+              <h4>📣 Das olympische Versprechen</h4>
+              <p>Begrüßung durch die Spielleitung: <em>"In den nächsten 3 Tagen geht es um alles. Jeder Handgriff zählt. Wer wird Champion des ersten Lehrjahres?"</em></p>
             </div>
-            <div class="op-card">
-              <div class="op-time">08:20</div>
-              <div class="op-content">
-                <h4>📵 HANDY-KONFISZIERUNG + KIT-AUSGABE</h4>
-                <p>Handys einsammeln, versiegeln. Ausgabe der Survival-Kits (PMR, Knicklichter, Gaffa-Tape, Klemmbrett). Funkkanäle zuweisen.</p>
-              </div>
-            </div>
-            <div class="op-card highlight-op">
-              <div class="op-time">08:40</div>
-              <div class="op-content">
-                <h4>🎖️ SQUAD-IDENTITÄT</h4>
-                <p>Funkrufnamen wählen ("Delta 1", "Echo Medic"), Motto formulieren, <strong>Team-Armbinden aus Gaffa-Tape und Edding</strong> basteln. Erste Squad-Kultur entsteht unter echtem Druck.</p>
-                <div class="op-tags"><span class="op-tag">Teambuilding</span><span class="op-tag">Identität</span></div>
+          </div>
+          <div class="event-card highlight-event">
+            <div class="event-time">08:30</div>
+            <div class="event-body">
+              <h4>🎨 Team-Drafting & Identität</h4>
+              <p>Bildung der 5er-Squads. Aufgabe mit Kreativ-Punkten: <strong>Teamname + Kampfschrei + Logo</strong> auf weißen T-Shirts (Textilmarker) oder Gaffa-Armbinden.</p>
+              <div class="event-tags">
+                <span class="ev-tag">Kreativität +XP</span>
+                <span class="ev-tag">Identität</span>
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- PHASE 2 -->
-        <div class="phase-block">
-          <div class="phase-label"><span class="mono-green">PHASE 2</span> — INFRASTRUKTUR & TRIAGE-TRAINING (09:30–12:30)</div>
-          <div class="ops-grid">
-            <div class="op-card">
-              <div class="op-time">09:30</div>
-              <div class="op-content">
-                <h4>🏕️ LAGERBAU — FOB EINRICHTEN</h4>
-                <p>Teams beziehen ihre "Wache" (Schlaflager = Forward Operating Base). Schlafsäcke, Material sortieren, Posten einteilen. Ab sofort: Keine Privaträume, nur Einsatzbereiche.</p>
-              </div>
-            </div>
-            <div class="op-card highlight-op">
-              <div class="op-time">10:30</div>
-              <div class="op-content">
-                <h4>⚡ TRÜMMERFELD-EVAKUIERUNG</h4>
-                <p><span class="op-story">Story: Ein Kellergewölbe ist eingestürzt. Staub macht blind.</span></p>
-                <p><strong>2 Teammitglieder tragen verbundene Augen</strong> und steuern die Trage mit Patient. Der Rest steht am Rand und darf <em>nur über verbale Kommandos</em> navigieren — kein Anfassen, kein Laufen.</p>
-                <div class="op-tags"><span class="op-tag">Tragen</span><span class="op-tag">CRM</span><span class="op-tag">Blind</span></div>
-              </div>
+          <div class="event-card highlight-event">
+            <div class="event-time">09:15</div>
+            <div class="event-body">
+              <h4>🏆 Enthüllung des Leaderboards</h4>
+              <p>Feierlicher Moment: Das Tuch fällt. Die Teamnamen werden eingetragen. Ab diesem Moment ist der Kampf eröffnet.</p>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- PHASE 3 -->
-        <div class="phase-block">
-          <div class="phase-label"><span class="mono-green">PHASE 3</span> — KOGNITIVE BELASTUNG (13:30–17:00)</div>
-          <div class="ops-grid">
-            <div class="op-card highlight-op">
-              <div class="op-time">13:30</div>
-              <div class="op-content">
-                <h4>💣 NOTSTROM-AKTIVIERUNG — PHARMAKOLOGIE BOMB DEFUSAL</h4>
-                <p><span class="op-story">Story: Der Notstromgenerator im Keller streikt. Sicherungskästen mit Zahlenschlössern verriegelt.</span></p>
-                <p>Hochkomplexe <strong>Dosierungsrechnungen</strong> (Perfusor-Laufraten, Verdünnungsreihen). Die Ergebnisse ergeben den Code. In der Kiste: ein <strong>"Sicherungskabel"</strong> — wichtiges Puzzleteil für den Escape Room an Tag 3.</p>
-                <div class="op-tags"><span class="op-tag">Pharmakologie</span><span class="op-tag">Dosierung</span><span class="op-tag">Gamification</span></div>
-              </div>
-            </div>
-            <div class="op-card highlight-op">
-              <div class="op-time">15:00</div>
-              <div class="op-content">
-                <h4>📡 FUNK-DIAGNOSTIK — INTEL RELAY</h4>
-                <p><span class="op-story">Story: Ein Spähtrupp hat einen Patienten gefunden, kann ihn nicht transportieren.</span></p>
-                <p>Ein Schüler sitzt im <strong>Nebenzimmer</strong> mit einem EKG-Bild oder Trauma-Foto. Er beschreibt es per Funk — das Team zeichnet und stellt die Diagnose. Nur Worte, keine Bilder.</p>
-                <div class="op-tags"><span class="op-tag">EKG</span><span class="op-tag">Funk</span><span class="op-tag">Kommunikation</span></div>
-              </div>
-            </div>
-            <div class="op-card highlight-op">
-              <div class="op-time">16:00</div>
-              <div class="op-content">
-                <h4>⚡ DUAL TASK CPR EXTREME</h4>
-                <p>CPR an der Puppe <em>(ohne Feedback-System — Strom ist weg!)</em>. Währenddessen schreit ein Instruktor <strong>Mythen-vs.-Fakten-Fragen</strong>, die sofort beantwortet werden müssen: "Reanimation bei Hypothermie? Ab wann Totenflecke?"</p>
-                <div class="op-tags"><span class="op-tag">CPR</span><span class="op-tag">Stressresistenz</span><span class="op-tag">Fachwissen</span></div>
+      <!-- PHASE 2 — SKILL STATIONS -->
+      <div class="olymp-phase">
+        <div class="phase-header-olymp">
+          <span class="phase-num-olymp">β</span>
+          <span>SKILL-STATIONEN — TIME TRIALS</span>
+          <span class="phase-time">09:30 – 12:30</span>
+        </div>
+        <p class="phase-desc">Teams rotieren durch Räume und Ecken des Basecamps. Zeit und Präzision entscheiden.</p>
+        <div class="stations-grid">
+          <div class="station-olymp">
+            <div class="station-num">01</div>
+            <div class="station-body">
+              <h4>Blind Bag & Blind SGA</h4>
+              <p>Mit verbundenen Augen oder in der Fühlbox: i.v.-Zugang richten oder SGA platzieren. Die anderen leiten <em>nur verbal</em> an.</p>
+              <div class="station-scoring">
+                <span>⏱ Zeitmessung</span>
+                <span>+ Strafsekunden für unsteriles Arbeiten</span>
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- PHASE 4 -->
-        <div class="phase-block">
-          <div class="phase-label"><span class="mono-green">PHASE 4</span> — DIE RUHE VOR DEM STURM (18:00–22:30)</div>
-          <div class="ops-grid">
-            <div class="op-card rest-op">
-              <div class="op-time">18:00</div>
-              <div class="op-content">
-                <h4>🔥 GRILLEN + TRÜGERISCHE RUHE</h4>
-                <p>Campingkocher / Grill auf dem Schulhof. Instruktoren nehmen die Helme ab. Stimmung auflockern. Lachen erlaubt.</p>
+          <div class="station-olymp">
+            <div class="station-num">02</div>
+            <div class="station-body">
+              <h4>Pharmakologie-Rätsel</h4>
+              <p>Massives Arbeitsblatt: Dosierungsrechnungen + Wirkstoff-Zuordnungen. Gegen die Uhr. Fehler kosten Zeit.</p>
+              <div class="station-scoring">
+                <span>🏅 Schnellste fehlerfreie Lösung gewinnt</span>
               </div>
             </div>
-            <div class="op-card rest-op">
-              <div class="op-time">20:00</div>
-              <div class="op-content">
-                <h4>🎬 FILMABEND IM "NOTSTROM-ZIMMER"</h4>
-                <p>Beamer im einzigen beleuchteten Raum (Story: "Notstromaggregat versorgt nur diesen einen Raum"). Medizinischer Film oder einfach Entspannung.</p>
-              </div>
-            </div>
-            <div class="op-card rest-op">
-              <div class="op-time">22:30</div>
-              <div class="op-content">
-                <h4>🌙 OFFIZIELLE NACHTRUHE</h4>
-                <p>Licht aus. <em>"Wir brauchen euch morgen frisch."</em></p>
-                <p class="op-subtle">Was sie nicht wissen: Sie haben nur ~3,5 Stunden.</p>
+          </div>
+          <div class="station-olymp">
+            <div class="station-num">03</div>
+            <div class="station-body">
+              <h4>Diagnostik-Battle</h4>
+              <p>Schüler sieht EKG/Verletzungsmuster → funkt Beschreibung ins Nachbarzimmer → Team zeichnet und stellt Diagnose.</p>
+              <div class="station-scoring">
+                <span>🎯 Genauigkeit + korrekte Diagnose</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- ========== CODE BLACK — NIGHT ALARM ========== -->
-      <div class="night-alarm-block">
-        <div class="alarm-header">
-          <div class="alarm-blink" aria-hidden="true"></div>
-          <div class="alarm-title-group">
-            <div class="alarm-time-stamp">02:00 UHR NACHTS — TAG 1 → TAG 2</div>
-            <h2 class="alarm-title">⚠ CODE BLACK — NACHTALARM</h2>
-            <div class="alarm-sub">"BLACKOUT RESCUE" — Das Highlight der 72 Stunden</div>
+      <!-- PHASE 3 — DUELS -->
+      <div class="olymp-phase">
+        <div class="phase-header-olymp">
+          <span class="phase-num-olymp">γ</span>
+          <span>THE ARENA — HEAD-TO-HEAD DUELS</span>
+          <span class="phase-time">13:30 – 17:00</span>
+        </div>
+        <p class="phase-desc">Teams treten direkt gegeneinander an. Die halbe Klasse schaut anfeuernd zu.</p>
+
+        <div class="duel-block">
+          <div class="duel-header">
+            <span class="duel-time">13:30</span>
+            <h3 class="duel-title">⚡ DUAL TASK CPR EXTREME</h3>
           </div>
-          <div class="alarm-blink" aria-hidden="true"></div>
-        </div>
-
-        <div class="alarm-regie">
-          <span class="mono-green">REGIEANWEISUNG //</span>
-          <p>Keiner darf wissen, dass das kommt. <strong>Keine Vorwarnung.</strong> Die Instruktoren brechen die Nachtruhe ohne Ankündigung.</p>
-        </div>
-
-        <div class="alarm-body">
-          <div class="alarm-desc">
-            <div class="alarm-timeline">
-              <div class="alarm-step">
-                <span class="alarm-step-time">02:00</span>
-                <div>
-                  <strong>Der Alarm</strong>
-                  <p>Ohrenbetäubender Alarm (Megafon oder Trillerpfeifen). Flackernde Taschenlampen der Instruktoren in den Schlafräumen. Rotes Blinklicht.</p>
-                </div>
-              </div>
-              <div class="alarm-step red-step">
-                <span class="alarm-step-time">02:00</span>
-                <div>
-                  <strong>Der Befehl</strong>
-                  <div class="alarm-quote">"MANV LAGE! SCHOCKRAUM BESETZEN! PANIK IM NACHBARGEBÄUDE! ALLE MANN RAUS! ABMARSCH IN 3 MINUTEN!"</div>
-                </div>
-              </div>
-              <div class="alarm-step">
-                <span class="alarm-step-time">02:05</span>
-                <div>
-                  <strong>Orientierung im Dunkeln</strong>
-                  <p>Schüler müssen sich im Dunkeln zurechtfinden, Einsatzkleidung anlegen und sich am Sammelpunkt melden.</p>
-                </div>
-              </div>
-              <div class="alarm-step">
-                <span class="alarm-step-time">02:10</span>
-                <div>
-                  <strong>Die Mission: Blackout Rescue</strong>
-                  <p>Schulgebäude / Trakt ist stockdunkel. Nur Taschenlampen. <strong>4–5 "Patienten"</strong> (geschminkte Schauspieler aus höheren Lehrjahren) im Gebäude verteilt suchen, erstversorgen (Tourniquet im Dunkeln, Bodycheck, stabile Seitenlage) und zum BHP transportieren. Übergabe nach <strong>SINNHAFT</strong> an den "Notarzt".</p>
-                </div>
-              </div>
-              <div class="alarm-step">
-                <span class="alarm-step-time">03:30</span>
-                <div>
-                  <strong>Lage unter Kontrolle</strong>
-                  <p>Adrenalin pur. Heißer Tee. Dann totmüde ins Bett fallen.</p>
-                </div>
-              </div>
+          <div class="duel-arena">
+            <div class="duel-team">
+              <div class="duel-team-label">TEAM A</div>
+              <div class="duel-icon">🫀</div>
+              <p>Reanimation an Puppe + Fragen beantworten</p>
+            </div>
+            <div class="duel-vs">
+              <span>VS</span>
+            </div>
+            <div class="duel-team">
+              <div class="duel-team-label">TEAM B</div>
+              <div class="duel-icon">🫀</div>
+              <p>Reanimation an Puppe + Fragen beantworten</p>
             </div>
           </div>
-          <div class="alarm-effects">
-            <div class="alarm-effect-item"><span class="effect-icon">🚨</span><div><strong>Alarm-Setup</strong><span>Megafon + Trillerpfeifen + rotes Blinklicht</span></div></div>
-            <div class="alarm-effect-item"><span class="effect-icon">🔦</span><div><strong>Blackout-Bedingungen</strong><span>Nur Taschenlampen & Knicklichter</span></div></div>
-            <div class="alarm-effect-item"><span class="effect-icon">🩸</span><div><strong>RUD-Patienten</strong><span>Kunstblut, offene Brüche, professionelle Schminke</span></div></div>
-            <div class="alarm-effect-item"><span class="effect-icon">📻</span><div><strong>Funk-Only</strong><span>PMR-Befehle vom Einsatzleiter</span></div></div>
-            <div class="alarm-effect-item"><span class="effect-icon">🎭</span><div><strong>Schauspieler</strong><span>Schüler älterer Lehrjahre als Patienten</span></div></div>
+          <div class="duel-desc">
+            <p>Beide Teams reanimieren nebeneinander. Instruktor feuert <strong>Mythen-vs.-Fakten-Fragen</strong> in den Raum: <em>"Adrenalin bei Asystolie sofort — Wahr oder Falsch?!"</em></p>
+            <div class="duel-scoring">Bewertung: CPR-Qualität (App/Feedback) + korrekte Antworten</div>
           </div>
         </div>
 
-        <div class="alarm-why">
-          <span class="mono-green">WARUM? //</span>
-          <p>Der Nachtalarm simuliert den harten Schichtdienst und den MANV-Einsatz. Aus dem Tiefschlaf gerissen werden, sofort funktionieren — das ist die Realität des Rettungsdienstes. Dieser Moment schweißt das Team so zusammen wie nichts anderes. <strong>Garantiert unvergesslich.</strong></p>
-        </div>
-      </div>
-
-      <!-- ========== TAG 2 ========== -->
-      <div class="day-block">
-        <div class="day-header">
-          <div class="day-badge">TAG 2</div>
-          <div class="day-title-block">
-            <h2>"THE CRUCIBLE"</h2>
-            <span class="day-sub">Überlebensmodus & Teamgeist</span>
+        <div class="duel-block">
+          <div class="duel-header">
+            <span class="duel-time">15:00</span>
+            <h3 class="duel-title">🏃 DER BLINDE PATIENT — TRAGENPARCOURS</h3>
           </div>
-          <div class="day-status">HIGH FIDELITY</div>
-        </div>
-
-        <div class="phase-block">
-          <div class="phase-label"><span class="mono-green">PHASE 6</span> — KATERSTIMMUNG & FALLBEISPIELE (09:00–13:00)</div>
-          <div class="ops-grid">
-            <div class="op-card rest-op">
-              <div class="op-time">09:00</div>
-              <div class="op-content">
-                <h4>☕ SPÄTES FRÜHSTÜCK + DEBRIEFING</h4>
-                <p>Tiefgehendes Debriefing des Nachteinsatzes. "Wie war die Kommunikation unter Stress? Was hat funktioniert — was ist verloren gegangen?"</p>
-              </div>
-            </div>
-            <div class="op-card highlight-op">
-              <div class="op-time">10:00</div>
-              <div class="op-content">
-                <h4>🩺 HIGH-FIDELITY FALLBEISPIELE</h4>
-                <p><span class="op-story">Story: Medikamente werden knapp. Keine Monitore — nur manuelle Blutdruckmessung und Stethoskop.</span></p>
-                <p><strong>RUD-Schminke + Schauspieler.</strong> Szenarien: Asthma-Anfall eskaliert; schweres SHT im Treppenhaus (Spineboard über 3 Stockwerke). Rotes Licht + Sirenentrack. Fokus: CRM, wenn die Technik wegfällt, muss der Mensch funktionieren.</p>
-                <div class="op-tags"><span class="op-tag">ABCDE</span><span class="op-tag">SBAR</span><span class="op-tag">CRM</span><span class="op-tag">Trauma</span></div>
-              </div>
-            </div>
-            <div class="op-card highlight-op">
-              <div class="op-time">11:30</div>
-              <div class="op-content">
-                <h4>🏃 STILLE POST EXTREM</h4>
-                <p>Nach dem Fallbeispiel: Übergabe mündlich durch <strong>4 Stationen — quer über den Schulhof rennend</strong>. Das letzte Teammitglied nennt dem "Arzt" die Diagnose. Wie viel Information geht verloren?</p>
-                <div class="op-tags"><span class="op-tag">Closed-Loop</span><span class="op-tag">SINNHAFT</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="phase-block">
-          <div class="phase-label"><span class="mono-green">PHASE 7</span> — RESSOURCENKNAPPHEIT & FEINMOTORIK (14:00–17:00)</div>
-          <div class="ops-grid">
-            <div class="op-card highlight-op">
-              <div class="op-time">14:00</div>
-              <div class="op-content">
-                <h4>👁️ BLIND BAG — FEINMOTORIK</h4>
-                <p><span class="op-story">Story: Stromausfall — keine Beleuchtung im Lagerraum.</span></p>
-                <p>Hände greifen durch zwei Löcher in eine abgedunkelte Box. Blind einen <strong>i.v.-Zugang vorbereiten oder eine Infusion richten</strong>. Zeitdruck. Kein Hinschauen.</p>
-                <div class="op-tags"><span class="op-tag">i.v.-Zugang</span><span class="op-tag">Motorik</span></div>
-              </div>
-            </div>
-            <div class="op-card highlight-op">
-              <div class="op-time">15:30</div>
-              <div class="op-content">
-                <h4>📡 ANTENNEN-REPARATUR</h4>
-                <p><span class="op-story">Story: Um ein SOS-Signal zu senden, muss ein Funkturm gebaut werden.</span></p>
-                <p>Aus Spaghetti, Marshmallows und Klebeband wird ein Turm gebaut. <strong>Welcher hält eine festgelegte Belastung aus?</strong> Dann: Plane umdrehen ("Giftiger Boden" — ohne Bodenkontakt).</p>
-                <div class="op-tags"><span class="op-tag">Strategie</span><span class="op-tag">Teamwork</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="phase-block">
-          <div class="phase-label"><span class="mono-green">PHASE 8</span> — DRUCKABFALL (18:00–open End)</div>
-          <div class="ops-grid">
-            <div class="op-card rest-op">
-              <div class="op-time">18:00</div>
-              <div class="op-content">
-                <h4>🍕 PIZZA + ECHTES CHILL-OUT</h4>
-                <p><span class="op-story">Story: "Erste Hilfskonvois sind auf dem Weg. Das Gröbste ist überstanden."</span></p>
-                <p>Wasserbombenschlacht auf dem Schulhof — als <em>"Dekontaminations-Übung"</em> getarnt. Lagerfeuer. Reflexion: <strong>"Was habe ich heute über mich selbst unter Stress gelernt?"</strong></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ========== TAG 3 ========== -->
-      <div class="day-block">
-        <div class="day-header">
-          <div class="day-badge">TAG 3</div>
-          <div class="day-title-block">
-            <h2>"THE FINAL PROTOCOL"</h2>
-            <span class="day-sub">Reboot & Legacy</span>
-          </div>
-          <div class="day-status green-status">FINALE</div>
-        </div>
-
-        <!-- ESCAPE ROOM -->
-        <div class="phase-block">
-          <div class="phase-label"><span class="mono-green">PHASE 9</span> — DER ESCAPE ROOM (09:00–11:30)</div>
-          <div class="escape-room-block">
-            <div class="escape-header">
+          <div class="parcours-info">
+            <div class="parcours-detail">
+              <span class="parcours-icon">👁️‍🗨️</span>
               <div>
-                <h3>🔓 MAINFRAME REBOOT</h3>
-                <p class="escape-story">Telekommunikation kann wiederhergestellt werden — aber der Serverraum ist verriegelt. <strong>60 Minuten.</strong> Alle Puzzleteile aus den vorherigen Tagen werden gebraucht.</p>
-              </div>
-              <div class="escape-timer">60:00</div>
-            </div>
-            <div class="escape-puzzles">
-              <div class="puzzle-card">
-                <div class="puzzle-num">01</div>
-                <div class="puzzle-icon">🫁</div>
-                <h4>Intubationspuppe</h4>
-                <p>Im Rachen steckt tief eine Kapsel. Nur korrekte Technik mit <strong>Laryngoskop + Magillzange</strong> (ohne Zahnschäden) öffnet den Weg zum Code.</p>
-                <div class="puzzle-skill">Airway Management</div>
-              </div>
-              <div class="puzzle-card">
-                <div class="puzzle-num">02</div>
-                <div class="puzzle-icon">🔦</div>
-                <h4>UV-Licht-Rätsel</h4>
-                <p>An der Wand stehen mit UV-Stift geschriebene <strong>Symptome</strong>. Das richtige Krankheitsbild diagnostizieren. Die Buchstabenanzahl der Diagnose ist der nächste Code.</p>
-                <div class="puzzle-skill">Symptomatik / Diagnose</div>
-              </div>
-              <div class="puzzle-card">
-                <div class="puzzle-num">03</div>
-                <div class="puzzle-icon">💓</div>
-                <h4>EKG-Puzzle</h4>
-                <p>Zerschnittene EKG-Streifen müssen zusammengesetzt werden. Die <strong>roten Markierungen</strong> ergeben eine Zahl — der letzte Code.</p>
-                <div class="puzzle-skill">EKG-Interpretation</div>
-              </div>
-              <div class="puzzle-card puzzle-reward">
-                <div class="puzzle-num">⭐</div>
-                <div class="puzzle-icon">🔌</div>
-                <h4>"Sicherungskabel" (Tag 1)</h4>
-                <p>Das am Tag 1 aus der Pharma-Kiste geborgene Kabel wird hier gebraucht — Verbindung zwischen den Tagen.</p>
-                <div class="puzzle-skill">Pharmakologie (Tag 1 Belohnung)</div>
+                <strong>Träger: Augenbinden</strong>
+                <span>Alle Träger sind blind</span>
               </div>
             </div>
-            <div class="escape-goal">
-              <span class="mono-green">ZIEL //</span>
-              <span>Den großen <strong>roten Buzzer</strong> drücken und den "Strom" (Licht im Raum) wieder einschalten.</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- PHASE 10 -->
-        <div class="phase-block">
-          <div class="phase-label"><span class="mono-green">PHASE 10</span> — DOKUMENTATION & COOL-DOWN (11:30–13:00)</div>
-          <div class="ops-grid">
-            <div class="op-card">
-              <div class="op-time">11:30</div>
-              <div class="op-content">
-                <h4>📸 FOTO-RALLYE "EINSATZ-TAGEBUCH"</h4>
-                <p><strong>Handys zurück</strong> — für exakt 45 Minuten. Auftrag: 5 typische Szenen der letzten Tage fotografisch nachstellen. <em>"Die heldenhafte Rettung", "Verzweiflung am Funkgerät", "Der Gruppenknoten"</em>, kreativste Halskrawatte, usw.</p>
-                <div class="op-tags"><span class="op-tag">Kreativität</span><span class="op-tag">Reflektion</span></div>
+            <div class="parcours-detail">
+              <span class="parcours-icon">🗣️</span>
+              <div>
+                <strong>Navigator: Kommandos</strong>
+                <span>Ein Schüler leitet verbal an</span>
               </div>
             </div>
-            <div class="op-card">
-              <div class="op-time">12:45</div>
-              <div class="op-content">
-                <h4>🔢 DAS ZÄHLSPIEL</h4>
-                <p>Klasse im Kreis, Augen zu. Von 20 runterzählen. Sprechen zwei gleichzeitig → zurück auf 20. Extreme Achtsamkeit, maximale Ruhe — perfekter Abschluss vor der Siegerehrung.</p>
+            <div class="parcours-detail">
+              <span class="parcours-icon">⚠️</span>
+              <div>
+                <strong>Strafsekunden</strong>
+                <span>+10 Sek. pro berührter Pylone</span>
               </div>
             </div>
           </div>
+          <p class="parcours-note">Aufbau auf dem Flur oder Schulhof (wo es gerade nicht stört).</p>
         </div>
+      </div>
 
-        <!-- PHASE 11 -->
-        <div class="phase-block">
-          <div class="phase-label"><span class="mono-green">PHASE 11</span> — DIE EPISCHE SIEGEREHRUNG (13:00–14:00)</div>
-          <div class="ops-grid">
-            <div class="op-card highlight-op">
-              <div class="op-time">13:00</div>
-              <div class="op-content">
-                <h4>📜 DIE ZEITKAPSEL</h4>
-                <p>Jeder schreibt einen kurzen Brief: <em>"Was habe ich diese drei Tage über mich gelernt? Was für ein Notfallsanitäter will ich am Ende der Ausbildung sein?"</em></p>
-                <p>Briefe kommen in eine Kiste, die vom <strong>Schulleiter bis zum Staatsexamen verschlossen</strong> wird.</p>
-              </div>
+      <!-- PHASE 4 -->
+      <div class="olymp-phase">
+        <div class="phase-header-olymp">
+          <span class="phase-num-olymp">δ</span>
+          <span>ZWISCHENSTAND & BASECAMP-CHILL</span>
+          <span class="phase-time">18:00 – 22:30</span>
+        </div>
+        <div class="events-grid">
+          <div class="event-card rest-event">
+            <div class="event-time">18:00</div>
+            <div class="event-body">
+              <h4>🔥 Großes Grillen</h4>
+              <p>Leaderboard wird <strong>live aktualisiert</strong>. Die Rivalität wird liebevoll angefacht: <em>"Team Alpha ist euch dicht auf den Fersen!"</em></p>
             </div>
-            <div class="op-card finale-op">
-              <div class="op-time">13:30</div>
-              <div class="op-content">
-                <h4>🏆 PREISVERLEIHUNG + ABSCHLUSSREDE</h4>
-                <p>Emotionale Rede über Teamgeist, Stressresistenz und Erwachsenwerden in diesem Beruf. Vergabe des <strong>Goldenen Spatels</strong> (gold besprühter Intubationsspatel auf Holzblock mit Gravur) an das Sieger-Squad.</p>
-                <p>Alle erhalten einen <strong>"Operation Blackout — Survivor"</strong> Patch oder Sticker + offizielle Urkunde.</p>
-                <div class="op-tags"><span class="op-tag">Konfetti-Kanonen</span><span class="op-tag">Patch</span><span class="op-tag">Urkunde</span></div>
-              </div>
+          </div>
+          <div class="event-card rest-event">
+            <div class="event-time">20:00</div>
+            <div class="event-body">
+              <h4>🌙 Betten bauen im Basecamp</h4>
+              <p>Gemütliches Beisammensein. Die FOB wird zur Heimat.</p>
+            </div>
+          </div>
+          <div class="event-card rest-event">
+            <div class="event-time">22:30</div>
+            <div class="event-body">
+              <h4>💤 Nachtruhe</h4>
+              <p class="subtle-text">Scheinbar.</p>
             </div>
           </div>
         </div>
@@ -587,158 +343,384 @@
     </div>
   </section>
 
-  <!-- ===== EPISCHE UPGRADES ===== -->
-  <section id="upgrades" class="section upgrades-section">
+  <div class="meander-bar" aria-hidden="true">
+    <div class="meander-line"></div>
+    <span class="meander-symbol">◆</span>
+    <div class="meander-line"></div>
+  </div>
+
+  <!-- ===== NACHT ===== -->
+  <section id="nacht" class="section nacht-section">
     <div class="container">
-      <div class="section-label"><span class="mono-green">03 //</span> EPISCHE UPGRADES — IMMERSION-TOOLKIT</div>
-      <h2 class="section-h2">Was es <span class="green">krass</span> macht</h2>
-      <p class="section-desc">Nicht Budget, sondern Kreativität. Diese Elemente kosten wenig — und verwandeln den Klassenraum in ein echtes Einsatzszenario.</p>
-      <div class="upgrades-grid">
-        <div class="upgrade-card">
-          <div class="upgrade-icon-wrap audio">🔊</div>
-          <h3>Audio & Licht</h3>
-          <ul class="upgrade-list">
-            <li>Farbige LED-Strahler (Baumarkt) für rote/blaue Szenario-Beleuchtung</li>
-            <li>Bluetooth-Boxen: Sirenen, Baustellenlärm, schreiende Angehörige</li>
-            <li>Gefakter Radio-Notruf als MP3-Loop für den Eingangsschock</li>
-            <li>Philips Hue / RGB-Lampen für Nachtalarm und Escape Room</li>
-          </ul>
+      <div class="nacht-block">
+        <div class="nacht-stars" aria-hidden="true">✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦ ✧ ✦</div>
+        <div class="nacht-header">
+          <div class="nacht-time-badge">02:00 UHR</div>
+          <h2 class="nacht-title">DIE LANGE NACHT</h2>
+          <div class="nacht-subtitle">Secret Challenge — Nur möglich, weil nachts die Schule leer ist</div>
         </div>
-        <div class="upgrade-card">
-          <div class="upgrade-icon-wrap comms">📻</div>
-          <h3>Kommunikation</h3>
-          <ul class="upgrade-list">
-            <li>PMR-Funkgeräte (~10–15€/Stück) — 1 pro Squad + 2 für Instruktoren</li>
-            <li>Befehle nur per Funk — kein Rufen im Szenario</li>
-            <li>Kamera-Streaming der Blind-Mission ins HQ (Handy-Kamera)</li>
-            <li>"Alpha Squad, sofort zum Haupteingang — Code Blue" per Funk lässt den Puls sofort steigen</li>
-          </ul>
-        </div>
-        <div class="upgrade-card">
-          <div class="upgrade-icon-wrap rud">🩸</div>
-          <h3>Realismus (RUD)</h3>
-          <ul class="upgrade-list">
-            <li>Kunstblut und Schminke (Theaterhandel, günstig)</li>
-            <li>Echte Kleidung, zerrissen und beschmutzt, für Patienten</li>
-            <li>Schüler älterer Lehrjahre als professionell geschminkte Schauspieler</li>
-            <li>UV-Stift für versteckte Botschaften an Wänden und Materialien</li>
-          </ul>
-        </div>
-        <div class="upgrade-card">
-          <div class="upgrade-icon-wrap instructors">🎖️</div>
-          <h3>Die Instruktoren</h3>
-          <ul class="upgrade-list">
-            <li>Dienstkleidung, Clipboard, Stoppuhr, Trillerpfeife</li>
-            <li>Konsequente Rollentreue über alle 72 Stunden</li>
-            <li>Hektisches, but kontrolliertes Briefing beim Eingang</li>
-            <li>Kein "Lehrer"-Verhalten — nur Einsatzleitungs-Haltung</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== XP SYSTEM ===== -->
-  <section id="xp" class="section xp-section">
-    <div class="container">
-      <div class="section-label"><span class="mono-green">04 //</span> XP-SYSTEM — LIVE-LEADERBOARD</div>
-      <h2 class="section-h2">Gamification <span class="green">auf Steroiden</span></h2>
-      <p class="section-desc">Statt langweiliger Punktelisten: Experience Points live auf dem Beamer im "Headquarter" (Aula). Jeder sieht den Stand. Jederzeit.</p>
-      <div class="xp-showcase">
-        <div class="leaderboard-mockup">
-          <div class="lb-header"><span class="mono-green blink-cursor">LEADERBOARD // LIVE █</span></div>
-          <div class="lb-row lb-1"><span class="lb-rank">01</span><span class="lb-name">ALPHA SQUAD</span><div class="lb-bar-wrap"><div class="lb-bar" style="width:92%"></div></div><span class="lb-xp">4.820 XP</span></div>
-          <div class="lb-row lb-2"><span class="lb-rank">02</span><span class="lb-name">BRAVO SQUAD</span><div class="lb-bar-wrap"><div class="lb-bar" style="width:81%"></div></div><span class="lb-xp">4.240 XP</span></div>
-          <div class="lb-row lb-3"><span class="lb-rank">03</span><span class="lb-name">CHARLIE SQUAD</span><div class="lb-bar-wrap"><div class="lb-bar" style="width:74%"></div></div><span class="lb-xp">3.870 XP</span></div>
-          <div class="lb-row"><span class="lb-rank">04</span><span class="lb-name">DELTA SQUAD</span><div class="lb-bar-wrap"><div class="lb-bar" style="width:61%"></div></div><span class="lb-xp">3.200 XP</span></div>
-          <div class="lb-row"><span class="lb-rank">05</span><span class="lb-name">ECHO SQUAD</span><div class="lb-bar-wrap"><div class="lb-bar" style="width:48%"></div></div><span class="lb-xp">2.510 XP</span></div>
-        </div>
-        <div class="xp-rules">
-          <h3>XP-Vergabe — Beispiele</h3>
-          <div class="xp-items">
-            <div class="xp-item positive"><span class="xp-val">+150 XP</span><span>CPR-Score über 90% (manuell bewertet)</span></div>
-            <div class="xp-item positive"><span class="xp-val">+100 XP</span><span>Fehlerfreier i.v.-Zugang im Blind Bag</span></div>
-            <div class="xp-item positive"><span class="xp-val">+120 XP</span><span>Vollständige SINNHAFT-Übergabe nach Nachtalarm</span></div>
-            <div class="xp-item positive"><span class="xp-val">+80 XP</span><span>Pharmakologie-Kode korrekt geknackt</span></div>
-            <div class="xp-item positive"><span class="xp-val">+200 XP</span><span>Escape Room zuerst abgeschlossen</span></div>
-            <div class="xp-item negative"><span class="xp-val">−30 XP</span><span>Kommunikationsfehler (kein Closed-Loop)</span></div>
-            <div class="xp-item negative"><span class="xp-val">−50 XP</span><span>Falsche Dosierungsangabe</span></div>
-            <div class="xp-item bonus"><span class="xp-val">⭐ BONUS</span><span>Besonderer Teamgeist (Instruktor-Entscheid)</span></div>
+        <div class="nacht-body">
+          <div class="nacht-desc">
+            <div class="nacht-trigger">
+              <span class="nacht-trigger-icon">🚨</span>
+              <div>
+                <strong>Der Alarm</strong>
+                <p>Schriller Alarm. Flackerndes Licht im Basecamp.</p>
+                <div class="nacht-quote">"Nachtschicht! MANV-Lage im C-Trakt! Ausrücken, sofort!"</div>
+              </div>
+            </div>
+            <div class="nacht-mission">
+              <h4>Die Mission</h4>
+              <ul class="nacht-list">
+                <li>Der betreffende Trakt ist abgedunkelt — Stroboskop-Taschenlampen</li>
+                <li>Teams suchen "Patienten" (Schauspieler/höhere Semester, professionell geschminkt)</li>
+                <li>Erstversorgung im Dunkeln: Tourniquet anlegen, Bodycheck, Triage</li>
+                <li>Übergabe nach <strong>SINNHAFT</strong> an den "Notarzt" am Behandlungsplatz</li>
+              </ul>
+            </div>
+          </div>
+          <div class="nacht-reward">
+            <div class="nacht-reward-title">💰 BONUSPUNKTE-JACKPOT</div>
+            <p>Die Nachtschicht bringt die fettesten Punkte des gesamten Wettbewerbs — für CRM, Führung unter Stress und korrekte Übergaben.</p>
+            <div class="nacht-reward-items">
+              <div class="nacht-reward-item">
+                <span>🏅 Vollständige SINNHAFT-Übergabe</span>
+                <span class="reward-xp">+200 XP</span>
+              </div>
+              <div class="nacht-reward-item">
+                <span>🏅 Erste Squad am Sammelpunkt</span>
+                <span class="reward-xp">+100 XP</span>
+              </div>
+              <div class="nacht-reward-item">
+                <span>🏅 Sauberste Triage-Dokumentation</span>
+                <span class="reward-xp">+150 XP</span>
+              </div>
+            </div>
+            <div class="nacht-end">03:30 — Debriefing, heißer Tee, zurück in die Schlafsäcke.</div>
           </div>
         </div>
       </div>
-      <div class="prizes-row">
-        <div class="prize-card gold-prize">
-          <div class="prize-rank">01</div>
-          <div class="prize-icon">🏆</div>
-          <h3>Der Goldene Spatel</h3>
-          <p>Gold besprühter Intubationsspatel auf Holzblock mit Gravur. Dazu: Stethoskop, Raptor-Scheren, Fachliteratur-Gutschein.</p>
-        </div>
-        <div class="prize-card silver-prize">
-          <div class="prize-rank">02</div>
-          <div class="prize-icon">🥈</div>
-          <h3>Einsatz-Ausrüstung</h3>
-          <p>Pupillenleuchten, Dienstkarabiner, Notizblöcke für den Dienst.</p>
-        </div>
-        <div class="prize-card bronze-prize">
-          <div class="prize-rank">03</div>
-          <div class="prize-icon">🥉</div>
-          <h3>Nervennahrung</h3>
-          <p>Riesiger Süßigkeiten-Korb + Energy Drinks für die nächsten Dienste.</p>
-        </div>
-        <div class="prize-card all-prize">
-          <div class="prize-rank">ALL</div>
-          <div class="prize-icon">🎖️</div>
-          <h3>"Operation Blackout — Survivor"</h3>
-          <p>Individueller Patch oder Sticker + Urkunde. Für jeden, der alle 72 Stunden überlebt hat.</p>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- ===== PÄDAGOGIK ===== -->
-  <section id="paed" class="section paed-section">
+  <div class="meander-bar" aria-hidden="true">
+    <div class="meander-line"></div>
+    <span class="meander-symbol">◆</span>
+    <div class="meander-line"></div>
+  </div>
+
+  <!-- ===== TAG 2 ===== -->
+  <section id="tag2" class="section tag-section">
     <div class="container">
-      <div class="section-label"><span class="mono-green">05 //</span> PÄDAGOGISCHER MEHRWERT</div>
-      <h2 class="section-h2">Für das Kollegium: <span class="green">Lernziele</span></h2>
-      <p class="section-desc">Hinter jedem "epischen" Element steckt ein konkretes Lernziel. Das ist kein Spektakel — das ist evidenzbasiertes Training.</p>
-      <div class="paed-table-wrap">
-        <table class="paed-table">
-          <thead>
-            <tr><th>Element</th><th>Erlebnis</th><th>Lernziel</th><th>Lehrplan-Bezug</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><span class="mono-green">Dual Task CPR</span></td><td>CPR unter Lärm & Fragen</td><td>Wissensabruf unter kognitiver Last → Automatisierung</td><td>BLS/ALS, Stressresistenz</td></tr>
-            <tr><td><span class="mono-green">Trümmerfeld-Evakuierung</span></td><td>Blind führen via Funk</td><td>Closed-Loop-Communication, Delegation unter Druck</td><td>CRM, Tragen</td></tr>
-            <tr><td><span class="mono-green">Funk-Diagnostik</span></td><td>EKG per Funk beschreiben</td><td>Präzise medizinische Sprache ohne Visualisierung</td><td>EKG, Kommunikation</td></tr>
-            <tr><td><span class="mono-green">Code Black (02:00)</span></td><td>Aus Tiefschlaf gerissen</td><td>Handlungsfähigkeit trotz Erschöpfung und Desorientierung</td><td>MANV, Stressresistenz</td></tr>
-            <tr><td><span class="mono-green">Stille Post Extrem</span></td><td>Übergabe über 4 Stationen</td><td>Informationsverlust spüren → SINNHAFT-Notwendigkeit</td><td>Patientenübergabe, SBAR</td></tr>
-            <tr><td><span class="mono-green">Bomb Defusal</span></td><td>Pharma-Rätsel → Code</td><td>Dosierungsberechnungen, Perfusor-Wissen</td><td>Pharmakologie</td></tr>
-            <tr><td><span class="mono-green">Escape Room</span></td><td>Laryngoskop, EKG, UV-Code</td><td>Jahreswissen vernetzen, Problemlösung im Team</td><td>Airway, EKG, CRM</td></tr>
-            <tr><td><span class="mono-green">Zeitkapsel</span></td><td>Brief ans zukünftige Ich</td><td>Metakognition — Selbstreflexion über eigenen Lernstand</td><td>Persönlichkeitsentwicklung</td></tr>
-          </tbody>
-        </table>
+      <div class="day-olymp-header">
+        <div class="day-olymp-badge">TAG II</div>
+        <div>
+          <h2 class="day-olymp-title">TACTICAL DAY</h2>
+          <p class="day-olymp-sub">Teamwork & Brains — Die Feuertaufe</p>
+        </div>
       </div>
-      <div class="paed-conclusion">
-        <div class="conclusion-icon">🎓</div>
-        <div class="conclusion-text">
-          <h3>Das Ergebnis</h3>
-          <p>Nach Operation Blackout starten die Anwärter nicht nur <strong>fachlich gefestigt</strong> ins zweite Lehrjahr — sie starten als ein Team, das gemeinsam etwas Außergewöhnliches überlebt hat. Der Code Black um 02:00 Uhr und der Escape Room werden die Geschichten sein, die sie noch an ihrem Staatsexamen erzählen.</p>
+
+      <!-- PHASE 5 -->
+      <div class="olymp-phase">
+        <div class="phase-header-olymp">
+          <span class="phase-num-olymp">ε</span>
+          <span>KATERSTIMMUNG & HIGH-FIDELITY FALLBEISPIELE</span>
+          <span class="phase-time">09:00 – 13:00</span>
+        </div>
+        <div class="events-grid">
+          <div class="event-card rest-event">
+            <div class="event-time">09:00</div>
+            <div class="event-body">
+              <h4>☕ Frühstück + Leaderboard-Update</h4>
+              <p>Das Leaderboard zeigt den Stand nach der Nachtschicht. Die Spannung steigt. Wer liegt vorn?</p>
+            </div>
+          </div>
+          <div class="event-card highlight-event">
+            <div class="event-time">10:00</div>
+            <div class="event-body">
+              <h4>🩺 Fallbeispiel-Marathon</h4>
+              <p>Mehrere Stationen mit komplexen Fällen: <strong>schweres SHT, eskalierendes Asthma</strong>. Der Twist: <em>"Der Monitor ist tot! Manuell messen!"</em> — simulierte Geräteausfälle.</p>
+              <div class="event-tags">
+                <span class="ev-tag">ABCDE</span>
+                <span class="ev-tag">SBAR</span>
+                <span class="ev-tag">CRM</span>
+              </div>
+              <div class="osce-badge">OSCE-Bewertung: Leitlinientreue + Kommunikation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHASE 6 -->
+      <div class="olymp-phase">
+        <div class="phase-header-olymp">
+          <span class="phase-num-olymp">ζ</span>
+          <span>TEAMBUILDING & KREATIVITÄT</span>
+          <span class="phase-time">14:00 – 17:00</span>
+        </div>
+        <div class="teamchall-grid">
+          <div class="teamchall-card">
+            <div class="tc-time">14:00</div>
+            <div class="tc-icon">🔁</div>
+            <h4>Gruppenknoten & Plane umdrehen</h4>
+            <p>Die Plane muss komplett gewendet werden — ohne dass jemand den "Lava-Boden" berührt. Gibt Punkte für die schnellste Zeit.</p>
+            <div class="tc-tag">⏱ Time Trial</div>
+          </div>
+          <div class="teamchall-card">
+            <div class="tc-time">15:00</div>
+            <div class="tc-icon">🍝</div>
+            <h4>Ingenieurs-Challenge</h4>
+            <p>Turm aus Spaghetti, Marshmallows und Klebeband. <strong>Bewertung: Höhe + muss eine 500ml NaCl-Flasche für 10 Sekunden tragen.</strong></p>
+            <div class="tc-tag">📐 Höhe + Stabilität</div>
+          </div>
+          <div class="teamchall-card">
+            <div class="tc-time">16:00</div>
+            <div class="tc-icon">🔢</div>
+            <h4>Das Zählspiel</h4>
+            <p>Alle im Kreis, Augen zu, von 20 rückwärts. Sprechen zwei gleichzeitig → zurück auf 20. Bricht den Wettkampfdruck und erfordert absolute Harmonie. Gibt Team-Punkte für alle bei Erfolg.</p>
+            <div class="tc-tag">🤝 Gruppenbonus</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHASE 7 -->
+      <div class="olymp-phase">
+        <div class="phase-header-olymp">
+          <span class="phase-num-olymp">η</span>
+          <span>ENTSPANNUNG — DIE STILLE VOR DEM FINALE</span>
+          <span class="phase-time">Ab 18:00</span>
+        </div>
+        <div class="mystery-box">
+          <div class="mystery-icon">🎭</div>
+          <div>
+            <h4>Die Punktestände sind verdeckt!</h4>
+            <p>Ab jetzt weiß <em>niemand mehr</em>, wer nach Tag 2 führt. Wasserbombenschlacht auf dem Pausenhof (freiwillig). Pizza bestellen. Debriefing-Training: "Wie kritisiert man konstruktiv?"</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <div class="meander-bar" aria-hidden="true">
+    <div class="meander-line"></div>
+    <span class="meander-symbol">◆</span>
+    <div class="meander-line"></div>
+  </div>
+
+  <!-- ===== TAG 3 ===== -->
+  <section id="tag3" class="section tag-section">
+    <div class="container">
+      <div class="day-olymp-header">
+        <div class="day-olymp-badge finale-badge">TAG III</div>
+        <div>
+          <h2 class="day-olymp-title gold-text">THE FINALS</h2>
+          <p class="day-olymp-sub">Das Finale & Legacy — Der Champion wird gekrönt</p>
+        </div>
+      </div>
+
+      <!-- ESCAPE ROOM -->
+      <div class="olymp-phase">
+        <div class="phase-header-olymp">
+          <span class="phase-num-olymp">θ</span>
+          <span>THE FINAL EXAM — MEDICAL ESCAPE ROOM</span>
+          <span class="phase-time">09:00 – 11:30</span>
+        </div>
+        <div class="escape-olymp">
+          <div class="escape-olymp-header">
+            <div>
+              <h3>Alle Teams starten gleichzeitig</h3>
+              <p>Jedes Team hat einen eigenen "Koffer" voller Schlösser (oder verschiedene Ecken des Raums). Wer ihn zuerst öffnet, bekommt <strong>massiv Punkte</strong>. Das ist das große Finale.</p>
+            </div>
+            <div class="escape-timer-olymp">60<span>MIN</span></div>
+          </div>
+          <div class="puzzles-olymp">
+            <div class="puzzle-olymp">
+              <div class="puzzle-olymp-num">Ι</div>
+              <div class="puzzle-olymp-icon">🫁</div>
+              <h4>Die Intubationspuppe</h4>
+              <p>Im Rachen steckt eine Kapsel. Nur korrekte Technik mit <strong>Laryngoskop + Magillzange</strong> (ohne Zahnschäden) bringt den ersten Code.</p>
+              <div class="puzzle-skill-badge">Airway Management</div>
+            </div>
+            <div class="puzzle-olymp">
+              <div class="puzzle-olymp-num">ΙΙ</div>
+              <div class="puzzle-olymp-icon">🔦</div>
+              <h4>UV-Licht-Rätsel</h4>
+              <p>UV-Lampe finden → verborgene Symptome an Wand/Tisch sichtbar → Diagnose stellen → Buchstabenzahl = Code.</p>
+              <div class="puzzle-skill-badge">Symptomatik</div>
+            </div>
+            <div class="puzzle-olymp">
+              <div class="puzzle-olymp-num">ΙΙΙ</div>
+              <div class="puzzle-olymp-icon">💓</div>
+              <h4>EKG-Puzzle</h4>
+              <p>Zerschnittene EKG-Streifen zusammensetzen. Die <strong>roten Markierungen</strong> ergeben eine Zahl — der letzte Code.</p>
+              <div class="puzzle-skill-badge">EKG-Interpretation</div>
+            </div>
+            <div class="puzzle-olymp gold-puzzle">
+              <div class="puzzle-olymp-num">★</div>
+              <div class="puzzle-olymp-icon">🏆</div>
+              <h4>Der Buzzer</h4>
+              <p>In der Kiste liegt der finale Hinweis oder der <strong>"Buzzer" zum Sieg</strong>. Drücken = Champion.</p>
+              <div class="puzzle-skill-badge gold-badge-skill">Gesamtwissen</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOTO-RALLYE & ZEITKAPSEL -->
+      <div class="olymp-phase">
+        <div class="phase-header-olymp">
+          <span class="phase-num-olymp">ι</span>
+          <span>FOTO-RALLYE & ZEITKAPSEL</span>
+          <span class="phase-time">11:30 – 13:00</span>
+        </div>
+        <div class="events-grid">
+          <div class="event-card highlight-event">
+            <div class="event-time">11:30</div>
+            <div class="event-body">
+              <h4>📸 Einsatz-Tagebuch</h4>
+              <p>Teams ziehen für <strong>45 Minuten</strong> über das Schulgelände. Aufgabe: Begriffe fotografisch nachstellen — <em>"Absolute Überforderung", "Der Lehrbuch-Bodycheck", "CRM gone wrong"</em>.</p>
+              <div class="event-tags"><span class="ev-tag">Kreativ-Punkte</span><span class="ev-tag">Zünglein an der Waage</span></div>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-time">12:30</div>
+            <div class="event-body">
+              <h4>📜 Die Zeitkapsel</h4>
+              <p>Jeder schreibt einen Brief an sich selbst — zum Ende der Ausbildung. <strong>Versiegelt. Unberührt. Bis zum Staatsexamen.</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIEGEREHRUNG -->
+      <div class="olymp-phase">
+        <div class="phase-header-olymp gold-phase-header">
+          <span class="phase-num-olymp">κ</span>
+          <span>DIE EPISCHE SIEGEREHRUNG</span>
+          <span class="phase-time">13:00 – 14:00</span>
+        </div>
+        <div class="ceremony-block">
+          <div class="ceremony-steps">
+            <div class="ceremony-step">
+              <span class="ceremony-time">13:00</span>
+              <div>
+                <h4>Versammlung vor dem Leaderboard</h4>
+                <p>Alle vor dem noch verdeckten Board. Spannung auf dem Höhepunkt.</p>
+              </div>
+            </div>
+            <div class="ceremony-step">
+              <span class="ceremony-time">13:10</span>
+              <div>
+                <h4>📸 Foto-Rallye-Präsentation</h4>
+                <p>Die lustigsten und kreativsten Bilder werden gezeigt. Lachen, Staunen, letzte Kreativ-Punkte.</p>
+              </div>
+            </div>
+            <div class="ceremony-step highlight-ceremony">
+              <span class="ceremony-time gold-text">13:30</span>
+              <div>
+                <h4 class="gold-text">🏆 Die Enthüllung</h4>
+                <p>Emotionale Rede über Teamgeist und das Erwachsenwerden in diesem Beruf. <strong>Das Tuch fällt. Der Sieger steht fest.</strong></p>
+                <p>Übergabe des <strong>Goldenen Spatels</strong> (Wanderpokal) an das Sieger-Team. Alle anderen: Urkunden oder Patches — <em>"Rescue Games Finisher"</em>.</p>
+              </div>
+            </div>
+            <div class="ceremony-step">
+              <span class="ceremony-time">14:00</span>
+              <div>
+                <h4>Ende, Aufräumen, Heimreise</h4>
+                <p>Ins Wochenende oder in die Ferien — als Champions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="meander-bar" aria-hidden="true">
+    <div class="meander-line"></div>
+    <span class="meander-symbol">◆</span>
+    <div class="meander-line"></div>
+  </div>
+
+  <!-- ===== PREISE ===== -->
+  <section id="preise" class="section preise-section">
+    <div class="container">
+      <div class="section-label-olymp">
+        <span class="label-roman">VI</span>
+        <span class="label-text">EHRUNG DER OLYMPIONIKEN</span>
+      </div>
+      <h2 class="section-title">Die Preise</h2>
+
+      <div class="podium-olymp">
+        <div class="podium-card-olymp silver-olymp">
+          <div class="podium-pos">II</div>
+          <div class="podium-trophy">🥈</div>
+          <h3>Zweiter Platz</h3>
+          <ul class="prize-list-olymp">
+            <li>Pupillenleuchten</li>
+            <li>Dienstkarabiner</li>
+            <li>Notizblöcke für den Dienst</li>
+          </ul>
+        </div>
+        <div class="podium-card-olymp gold-olymp">
+          <div class="podium-crown">♛</div>
+          <div class="podium-pos">I</div>
+          <div class="podium-trophy">🏆</div>
+          <h3>Champion</h3>
+          <ul class="prize-list-olymp">
+            <li>✦ Der Goldene Spatel (Wanderpokal)</li>
+            <li>Hochwertiges Stethoskop</li>
+            <li>Personalisierte Kleiderscheren</li>
+            <li>Gutschein Fachliteratur</li>
+          </ul>
+          <div class="champion-label">CHAMPION</div>
+        </div>
+        <div class="podium-card-olymp bronze-olymp">
+          <div class="podium-pos">III</div>
+          <div class="podium-trophy">🥉</div>
+          <h3>Dritter Platz</h3>
+          <ul class="prize-list-olymp">
+            <li>Süßigkeiten-Korb</li>
+            <li>Energy Drinks</li>
+            <li>Snacks für den Dienst</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="all-award">
+        <span class="all-award-icon">🎖️</span>
+        <div>
+          <h3>Alle Teilnehmer</h3>
+          <p>Urkunde <em>"Rescue Games Finisher"</em> + individueller Patch. Wer alle drei Tage überlebt hat, ist ein Olympionike.</p>
+        </div>
+      </div>
+
+      <!-- XP TABLE -->
+      <div class="xp-table-wrap">
+        <h3 class="xp-table-title">XP-Vergabe — Beispiele</h3>
+        <div class="xp-table-grid">
+          <div class="xp-row positive-xp"><span>Schnellste korrekte Pharma-Lösung</span><span class="xp-pts">+100 XP</span></div>
+          <div class="xp-row positive-xp"><span>Beste CPR-Qualität im Duel</span><span class="xp-pts">+150 XP</span></div>
+          <div class="xp-row positive-xp"><span>Vollständige SINNHAFT-Übergabe (Nacht)</span><span class="xp-pts">+200 XP</span></div>
+          <div class="xp-row positive-xp"><span>Escape Room zuerst abgeschlossen</span><span class="xp-pts">+250 XP</span></div>
+          <div class="xp-row positive-xp"><span>Kreativste Foto-Rallye</span><span class="xp-pts">+80 XP</span></div>
+          <div class="xp-row positive-xp"><span>Zählspiel erfolgreich</span><span class="xp-pts">+50 XP (alle)</span></div>
+          <div class="xp-row negative-xp"><span>Kommunikationsfehler (kein Closed-Loop)</span><span class="xp-pts">−30 XP</span></div>
+          <div class="xp-row negative-xp"><span>Falsche Dosierung</span><span class="xp-pts">−50 XP</span></div>
+          <div class="xp-row bonus-xp"><span>⭐ Besonderer Teamgeist (Spielleitung)</span><span class="xp-pts">Bonus</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <div class="footer-logo"><span class="mono-green">[</span> OPERATION BLACKOUT // PROJEKT E <span class="mono-green">]</span></div>
-        <div class="footer-meta">
-          <span class="mono-sm">Medical Task Force Vanguard</span>
-          <span class="mono-sm">Abschluss 1. Lehrjahr</span>
-          <span class="mono-sm red-text">VERSCHLUSSSACHE</span>
-        </div>
-        <div class="footer-bottom"><span class="mono-sm muted">"Expect the unexpected."</span></div>
+        <div class="footer-emblem">❧ BIZ OLYMPIADE ❧</div>
+        <p class="footer-tagline">Abschluss des ersten Lehrjahres · Wer wird Champion?</p>
+        <div class="footer-greek">ΝΙΚΗ · ΑΡΕΤΗ · ΟΜΑΔΑ</div>
+        <p class="footer-trans"><em>Sieg · Tugend · Team</em></p>
       </div>
     </div>
   </footer>
